@@ -6,4 +6,7 @@
    <h2>{{ publicacion.titulo }}</h2>
    <p>{{ publicacion.cuerpo }}</p>
 </div>
+
+<a href="{% url 'editar_pub' publicacion.pk %}">Editar entrada al Blog</a> | <a href="">Eliminar entrada al Blog</a>
+
 {% endblock contenido %}

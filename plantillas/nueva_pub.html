@@ -1,0 +1,11 @@
+<!--plantillas/nueva_pub.html-->
+{% extends 'base.html' %}
+
+
+{% block contenido %}
+<h1>Nueva Publicacion en miBlog</h1>
+<form action="" method="post">{% csrf_token %}
+{{ form.as_p }}
+<input type="submit" value="Guardar">
+</form>
+{% endblock contenido %}

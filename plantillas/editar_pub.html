@@ -1,0 +1,11 @@
+<!--plantillas/editar_pub.html-->
+
+{% extends 'base.html' %}
+
+{% block contenido %}
+<h1>Editar publicacion</h1>
+<form action="" method="post">{% csrf_token %}
+{{ form.as_p }}
+<button type="submit">Actualizar</button>
+</form>
+{% endblock contenido %}
